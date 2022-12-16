@@ -106,7 +106,7 @@ function test() {
 // xác định ngày tiếp theo
 
 let showDate;
-let showMonth;
+let showMonth = month;
 let showYear = year;
 
 if (flagDate == true && flagMonth == true) {
@@ -129,7 +129,6 @@ if (flagDate == true && flagMonth == true) {
       case 12:
         if (date < 30) {
           showDate = date + 1;
-          showMonth = month;
         } else {
           if (month == 12) {
             showDate = 1;
@@ -144,7 +143,6 @@ if (flagDate == true && flagMonth == true) {
       default:
         if (date < 29) {
           showDate = date + 1;
-          showMonth = month;
         } else {
           showDate = 1;
           showMonth = month + 1;
