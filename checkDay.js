@@ -8,17 +8,11 @@ let flagYear = false;
 // Kiểm tra ngày tháng năm xem có hợp lệ không
 if (month < 0 || month > 12) {
   let flagMonth = false;
-
-  console.log(flagMonth);
   console.log("month is error");
 } else if (date > 31 || date < 0) {
   console.log("date is error");
 } else {
   test();
-  // console.log('ngày',date);
-  // console.log("tháng",month);
-  // console.log("năm",year);
-
   if (test() == true) {
     switch (month) {
       case 2:
